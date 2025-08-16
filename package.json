@@ -1,0 +1,17 @@
+{
+  "name": "aichatapp",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "scripts": {
+    "dev": "bun run --filter aichatapp-backend dev & bun run --filter aichatapp-frontend dev",
+    "build": "bun run --filter aichatapp-backend build && bun run --filter aichatapp-frontend build",
+    "start": "bun run --filter aichatapp-backend start"
+  }
+}
